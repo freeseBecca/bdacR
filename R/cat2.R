@@ -5,14 +5,14 @@
 #' @param y Variable to summarize per group
 #' @param u Include row for missing values? Defaults to TRUE
 #' @param ulab Label for missing values
-#' @param r Values, either 1 default or 2 - columns sum to 100 %
+#' @param r Values, either 1 or 2 default - columns sum to 100 %
 #' @param nam Label of variable summarized. Defaults to ""
-#' @keywords
+#' @keywords table1
 #' @export
 #' @examples
 #' cat2()
 
-cat2 <- function(x, y, u = TRUE, ulab = "Missing", r = 1, nam = "") {
+cat2 <- function(x, y, u = TRUE, ulab = "Missing", r = 2, nam = "") {
   if (u == T) {
     cbind(
       rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),

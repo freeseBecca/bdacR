@@ -5,7 +5,7 @@
 #' @param l Label for summary column. Defaults to Overall
 #' @param prmr Include median and range? Defaults to FALSE
 #' @param nam Label of summary variable
-#' @keywords
+#' @keywords table1
 #' @export
 #' @examples
 #' con1()
@@ -18,7 +18,7 @@ con1 <- function(y, l = "Overall", prmr = FALSE, nam = "") {
       ),
       nrow = 3, byrow = T, dimnames = list(c(
         nam,
-        "&nbsp;&nbsp;Mean (SD) [NA]",
+        "&nbsp;&nbsp;Mean (SD) [Missing]",
         "&nbsp;&nbsp;Median [Range]"
       ), l))
   } else {
@@ -26,7 +26,7 @@ con1 <- function(y, l = "Overall", prmr = FALSE, nam = "") {
       c("", sprintf("%1.2f (%1.2f) [%1.0f]", mean(y, na.rm = T), sd(y, na.rm = T), sum(is.na(y)))
       ),
       nrow = 2, byrow = T, dimnames = list(c(
-        nam, "&nbsp;&nbsp;Mean (SD) [NA]"
+        nam, "&nbsp;&nbsp;Mean (SD) [Missing]"
       ), l))
   }
 }

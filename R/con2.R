@@ -6,7 +6,7 @@
 #' @param d Digits to print. Defaults to 1
 #' @param nam Lable of characteristic column. Defaults to ""
 #' @param prmr Include median and range? Defaults to FALSE.
-#' @keywords
+#' @keywords table1
 #' @export
 #' @examples
 #' con2()
@@ -29,7 +29,7 @@ con2 <- function(x, y, d = 1, nam = "", prmr = TRUE) {
                   max(k, na.rm = T))
         })),
         nrow = 2, byrow = T, dimnames = list(c(
-          "&nbsp;&nbsp;Mean (SD) [NA]",
+          "&nbsp;&nbsp;Mean (SD) [Missing]",
           "&nbsp;&nbsp;Median [Range]"
         ), levels(as.factor(x)))))
   } else {
@@ -43,7 +43,7 @@ con2 <- function(x, y, d = 1, nam = "", prmr = TRUE) {
                   sum(is.na(j)))
         })),
         nrow = 1, byrow = T, dimnames = list(c(
-          "&nbsp;&nbsp;Mean (SD) [NA]"
+          "&nbsp;&nbsp;Mean (SD) [Missing]"
         ), levels(as.factor(x)))))
   }
 }

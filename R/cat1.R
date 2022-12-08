@@ -6,7 +6,7 @@
 #' @param u Include row for missing values? Defaults to TRUE
 #' @param ulab Label for missing value row. Defaults to Missing
 #' @param nam Variable label. Defaults to ""
-#' @keywords 
+#' @keywords table1
 #' @export
 #' @examples
 #' cat1()

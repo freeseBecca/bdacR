@@ -2,7 +2,7 @@
 #'
 #' This function allows you to summarize a continuous variable by group for tables
 #' @param x Grouping variable
-#' @param y Variablet o summarize per group
+#' @param y Variable to summarize per group
 #' @param d Digits to print. Defaults to 1
 #' @param nam Lable of characteristic column. Defaults to ""
 #' @param prmr Include median and range? Defaults to FALSE.

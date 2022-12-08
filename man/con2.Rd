@@ -9,7 +9,7 @@ con2(x, y, d = 1, nam = "", prmr = TRUE)
 \arguments{
 \item{x}{Grouping variable}
 
-\item{y}{Variablet o summarize per group}
+\item{y}{Variable to summarize per group}
 
 \item{d}{Digits to print. Defaults to 1}
 

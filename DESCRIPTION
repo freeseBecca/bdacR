@@ -1,0 +1,13 @@
+Package: bdacR
+Title: Handy functions for work at BDAC
+Version: 0.0.0.9000
+Authors@R: 
+    person("Rebecca", "Freese", , "frees048@umn.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Compiles functions for everyday use at BDAC. Includes tools to assist in making table one and common report templates. 
+License: None
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Imports:
+	data.table (>= 1.9.4)

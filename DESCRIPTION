@@ -3,7 +3,7 @@ Title: Handy functions for work at BDAC
 Version: 0.0.0.9000
 Authors@R: 
     person("Rebecca", "Freese", , "frees048@umn.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0001-9477-4231"))
 Description: Compiles functions for everyday use at BDAC. Includes tools to assist in making table one and common report templates. 
 License: None
 Encoding: UTF-8

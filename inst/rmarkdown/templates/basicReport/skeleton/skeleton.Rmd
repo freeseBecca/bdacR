@@ -1,0 +1,43 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author: "Prepared by Becca Freese, MS  \nUniversity of Minnesota  \nClinical and Translational Science Institute  \nBiostatistical Design and Analysis Center"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: "left = 2cm, right = 2cm, top = 2cm, bottom = 3cm"
+header-includes:
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{eurosym}
+  \usepackage{grffile}
+  \usepackage{booktabs,xcolor}
+  \usepackage{eso-pic,graphicx,transparent}
+  \pagestyle{fancy} \fancyhf{}
+  \addtolength{\headheight}{57.80487pt}
+  \rhead{\includegraphics[width=4cm]{../../Mwdmk_D2Dmaroon.png}}
+  \fancyfoot[R]{\thepage}
+  \setlength\footskip{14.0pt}
+  \fancypagestyle{plain}{\pagestyle{fancy}}
+  \pagenumbering{arabic}
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+editor_options:
+  chunk_output_type: console
+classoption: landscape
+---
+
+-----
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+
+```
+
+
+# Overview
+
+## Data
+
+# Analysis

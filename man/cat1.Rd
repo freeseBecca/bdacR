@@ -9,11 +9,11 @@ cat1(y, l = "Overall", u = TRUE, ulab = "&nbsp;Missing", nam = "")
 \arguments{
 \item{y}{categorical variable to summarize}
 
-\item{l}{Column label. Defaults to OVerall}
+\item{l}{Column label. Defaults to "OVerall"}
 
 \item{u}{Include row for missing values? Defaults to TRUE}
 
-\item{ulab}{Label for missing value row. Defaults to Missing}
+\item{ulab}{Label for missing value row. Defaults to "Missing"}
 
 \item{nam}{Variable label. Defaults to ""}
 }

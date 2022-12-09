@@ -2,7 +2,7 @@
 #'
 #' This function allows you to summarize a continuous variable for tables
 #' @param y Variable to summarize
-#' @param l Label for summary column. Defaults to Overall
+#' @param l Label for summary column. Defaults to "Overall"
 #' @param prmr Include median and range? Defaults to FALSE
 #' @param nam Label of summary variable
 #' @keywords table1

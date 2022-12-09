@@ -4,8 +4,8 @@
 #' @param x Grouping variable
 #' @param y Variable to summarize per group
 #' @param u Include row for missing values? Defaults to TRUE
-#' @param ulab Label for missing values
-#' @param r Values, either 1 or 2 default - columns sum to 100 %
+#' @param ulab Label for missing values, defaults to "Missing"
+#' @param r Values, either 1 or 2 default - columns sum to 100%
 #' @param nam Label of variable summarized. Defaults to ""
 #' @keywords table1
 #' @export

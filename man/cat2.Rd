@@ -13,9 +13,9 @@ cat2(x, y, u = TRUE, ulab = "Missing", r = 2, nam = "")
 
 \item{u}{Include row for missing values? Defaults to TRUE}
 
-\item{ulab}{Label for missing values}
+\item{ulab}{Label for missing values, defaults to "Missing"}
 
-\item{r}{Values, either 1 or 2 default - columns sum to 100 \%}
+\item{r}{Values, either 1 or 2 default - columns sum to 100\%}
 
 \item{nam}{Label of variable summarized. Defaults to ""}
 }

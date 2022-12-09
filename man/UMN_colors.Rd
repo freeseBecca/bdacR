@@ -23,7 +23,6 @@ A data frame with 12 rows and 3 columns:
 UMN_colors
 }
 \description{
-A subset of data from the World Health Organization Global Tuberculosis
-Report ...
+Quickly look up HEX color codes for UMN branding
 }
 \keyword{datasets}

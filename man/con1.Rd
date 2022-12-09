@@ -9,7 +9,7 @@ con1(y, l = "Overall", prmr = FALSE, nam = "")
 \arguments{
 \item{y}{Variable to summarize}
 
-\item{l}{Label for summary column. Defaults to Overall}
+\item{l}{Label for summary column. Defaults to "Overall"}
 
 \item{prmr}{Include median and range? Defaults to FALSE}
 

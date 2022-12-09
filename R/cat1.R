@@ -2,9 +2,9 @@
 #'
 #' This function allows you to get variable summaries for a categorical variable for tables.
 #' @param y categorical variable to summarize
-#' @param l Column label. Defaults to OVerall
+#' @param l Column label. Defaults to "OVerall"
 #' @param u Include row for missing values? Defaults to TRUE
-#' @param ulab Label for missing value row. Defaults to Missing
+#' @param ulab Label for missing value row. Defaults to "Missing"
 #' @param nam Variable label. Defaults to ""
 #' @keywords table1
 #' @export

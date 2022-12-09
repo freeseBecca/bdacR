@@ -1,0 +1,73 @@
+---
+title: "DSMB Report - CLOSED Session  \nTitle of study"
+subtitle: "Subtitle"
+author: "Created by Rebecca L. Freese"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: "left = 1cm, right = 1cm, top = 2cm, bottom = 3cm"
+header-includes:
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{eurosym}
+  \usepackage{grffile}
+  \usepackage{booktabs,xcolor}
+  \usepackage{eso-pic,graphicx,transparent}
+  \pagestyle{fancy} \fancyhf{}
+  \addtolength{\headheight}{57.80487pt}
+  \rhead{\today}
+  \lhead{\includegraphics[width=6cm]{Mwdmk_D2Dmaroon.png}}
+  \fancyfoot[R]{\thepage}
+  \setlength\footskip{14.0pt}
+  \fancypagestyle{plain}{\pagestyle{fancy}}
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+editor_options:
+  chunk_output_type: console
+classoption: landscape
+---
+
+```{r setup, include = F}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+```
+
+# Report Summary
+
+# Study Status
+
+## Overall Enrollment
+
+## Follow-up and Withdraw Status by Randomization Group
+
+**Missed visits** are identified as those where a participant should have had a visit by the date the data was pulled, but no data is recorded. This calculation does not count participants as missing a visit after they have formally withdrawn.
+
+For any row in the table, columns for Completed Visit, Cumulative Withdrew, and To Be Completed add to the total number enrolled. 
+
+### Group 1
+
+### Group 2
+
+## Withdraw by Randomization Group
+
+The following plot shows the probability of staying in the study over time, by randomization group. Tick marks represent dates of administrative censoring at the date of data pull.
+
+### Figure 1: Withdraw over time {-}
+
+# Demographics by Randomization Group
+
+# Protocol Deviations
+
+## Deviations by Randomization Group
+
+### Deviations Group 1
+
+### Deviations Group 2
+
+# Adverse Events
+
+## AEs by Randomization Group
+
+## AEs Group 1
+
+## AEs Group 2

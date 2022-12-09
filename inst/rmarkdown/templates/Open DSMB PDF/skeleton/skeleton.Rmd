@@ -1,0 +1,66 @@
+---
+title: "DSMB Report - OPEN Session  \nTitle of Study"
+subtitle: "Subtitle"
+author: "Created by Rebecca L. Freese"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=3cm
+header-includes:
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{eurosym}
+  \usepackage{grffile}
+  \usepackage{booktabs,xcolor}
+  \usepackage{eso-pic,graphicx,transparent}
+  \pagestyle{fancy} \fancyhf{}
+  \addtolength{\headheight}{57.80487pt}
+  \rhead{\today}
+  \lhead{\includegraphics[width=6cm]{Mwdmk_D2Dmaroon.png}}
+  \fancyfoot[R]{\thepage}
+  \setlength\footskip{14.0pt}
+  \fancypagestyle{plain}{\pagestyle{fancy}}
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include = F}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+
+```
+
+
+# Report Summary
+
+## Data Management and Analytic Software
+
+# Protocol Synopsis
+
+## Personnel
+
+## Study Design
+
+## Projected Timetable and Schedule
+
+# Study Status
+
+## Summary of Past DSMB Meetings
+
+## Summary of Protocol Changes
+
+# Recruitment and Participant Status: Figures and Tables
+
+## Enrollment: Actual vs. Expected
+
+## Overall Study Status
+
+### Sibling Participation
+
+## Demographic and Key Baseline Characteristics
+
+## Protocol Deviations
+
+# Study Monitoring

@@ -12,28 +12,24 @@
 #' @examples
 #' cat2()
 
-cat2 <- function(x, y, u = TRUE, ulab = "Missing", r = 2, nam = "") {
+cat2 <- function (x, y, u = TRUE, ulab = "Missing", r = 2, nam = "")
+{
   if (u == T) {
-    cbind(
-      rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),
-            matrix(
-              sprintf(
-                "%1.0f (%1.1f)", table(y, x), 100 * prop.table(table(y, x), r)
-              ), nrow = nrow(table(y, x)), ncol = ncol(table(y, x)), dimnames = list(paste("&nbsp;&nbsp;", rownames(
-                table(y, x)
-              ), sep = ""), colnames(table(y, x)))
-            ),
-            matrix(table(x)-table(is.na(y), x)[1,], nrow = 1, dimnames = list("Missing")))
-    )
+    cbind(rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),
+                matrix(sprintf("%1.0f (%1.1f)", table(y, x), 100 *
+                                 prop.table(table(y, x), r)), nrow = nrow(table(y,
+                                                                                x)), ncol = ncol(table(y, x)), dimnames = list(paste(
+                                                                                  rownames(table(y, x)), sep = ""), colnames(table(y,
+                                                                                                                                   x)))), matrix(table(x) - table(is.na(y), x)[1,
+                                                                                                                                   ], nrow = 1, dimnames = list("Missing"))))
   }
   else if (u == F) {
-    cbind(
-      rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),
-            matrix(
-              sprintf(
-                "%1.0f (%1.1f)", table(y, x), 100 * prop.table(table(y, x), r)
-              ), nrow = nrow(table(y, x)), ncol = ncol(table(y, x)), dimnames = list(paste("&nbsp;&nbsp;", rownames(
-                table(y, x)
-              ), sep = ""), colnames(table(y, x)))))
-    ) }
+    cbind(rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),
+                matrix(sprintf("%1.0f (%1.1f)", table(y, x), 100 *
+                                 prop.table(table(y, x), r)), nrow = nrow(table(y,
+                                                                                x)), ncol = ncol(table(y, x)), dimnames = list(paste(
+                                                                                  rownames(table(y, x)), sep = ""), colnames(table(y,
+                                                                                                                                   x))))))
+  }
 }
+

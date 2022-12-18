@@ -1,2 +1,3 @@
 name: Basic PDF Template
 description: This is a template to format pdf R Markdown outputs
+create_dir: false

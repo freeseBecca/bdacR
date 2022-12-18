@@ -1,2 +1,4 @@
 name: Closed DSMB PDF
 description: This is a template to format closed DSMB reports
+create_dir: false
+

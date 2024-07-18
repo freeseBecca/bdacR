@@ -4,7 +4,7 @@
 #' @param x Grouping variable
 #' @param y Variable to summarize per group
 #' @param d Digits to print. Defaults to 1
-#' @param nam Lable of characteristic column. Defaults to ""
+#' @param nam Label of characteristic column. Defaults to ""
 #' @param prmr Include median and range? Defaults to FALSE.
 #' @keywords table1
 #' @export
@@ -34,3 +34,5 @@ con2 <- function (x, y, d = 1, nam = "", prmr = TRUE)
                                                            levels(as.factor(x)))))
   }
 }
+
+

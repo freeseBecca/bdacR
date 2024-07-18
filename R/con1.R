@@ -27,20 +27,3 @@ con1 <- function (y, l = "Overall", prmr = FALSE, nam = "")
                                                 l))
   }
 }
-
-cat1 <- function (y, l = "Overall", u = TRUE, ulab = "Missing",
-                  nam = "")
-{
-  if (u == T) {
-    matrix(c("", sprintf("%1.0f (%1.1f)", table(y),
-                         100 * prop.table(table(y))), sum(is.na(y))), ncol = 1,
-           dimnames = list(c(paste0(nam, ", N (%)"), paste0(c(rownames(table(y)))), ulab), l))
-  }
-  else if (u == F) {
-    matrix(c("", sprintf("%1.0f (%1.1f)", table(y),
-                         100 * prop.table(table(y)))), ncol = 1, dimnames = list(c(paste0(nam,
-                                                                                          ", N (%)"), paste0(rownames(table(y)))),
-                                                                                 l))
-  }
-}
-

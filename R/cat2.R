@@ -15,7 +15,7 @@
 cat2 <- function (x, y, u = TRUE, ulab = "Missing", r = 2, nam = "")
 {
   if (u == T) {
-    cbind(rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),
+    cbind(rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(paste0(nam, ", N (%)"))),
                 matrix(sprintf("%1.0f (%1.1f)", table(y, x), 100 *
                                  prop.table(table(y, x), r)), nrow = nrow(table(y,
                                                                                 x)), ncol = ncol(table(y, x)), dimnames = list(paste(
@@ -24,7 +24,7 @@ cat2 <- function (x, y, u = TRUE, ulab = "Missing", r = 2, nam = "")
                                                                                                                                    ], nrow = 1, dimnames = list("Missing"))))
   }
   else if (u == F) {
-    cbind(rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(nam)),
+    cbind(rbind(matrix("", ncol = ncol(table(y, x)), dimnames = list(paste0(nam, ", N (%)"))),
                 matrix(sprintf("%1.0f (%1.1f)", table(y, x), 100 *
                                  prop.table(table(y, x), r)), nrow = nrow(table(y,
                                                                                 x)), ncol = ncol(table(y, x)), dimnames = list(paste(

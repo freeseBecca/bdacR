@@ -13,7 +13,7 @@ con2(x, y, d = 1, nam = "", prmr = TRUE)
 
 \item{d}{Digits to print. Defaults to 1}
 
-\item{nam}{Lable of characteristic column. Defaults to ""}
+\item{nam}{Label of characteristic column. Defaults to ""}
 
 \item{prmr}{Include median and range? Defaults to FALSE.}
 }

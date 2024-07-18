@@ -4,12 +4,12 @@
 \alias{cat1}
 \title{One categorical variable}
 \usage{
-cat1(y, l = "Overall", u = TRUE, ulab = "&nbsp;Missing", nam = "")
+cat1(y, l = "Overall", u = TRUE, ulab = "Missing", nam = "")
 }
 \arguments{
 \item{y}{categorical variable to summarize}
 
-\item{l}{Column label. Defaults to "OVerall"}
+\item{l}{Column label. Defaults to "Overall"}
 
 \item{u}{Include row for missing values? Defaults to TRUE}
 
